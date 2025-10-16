@@ -10,8 +10,13 @@
 	</parent>
 	<groupId>com.ikon</groupId> <!-- lookup parent from repository -->
 	<artifactId>tender-management</artifactId><!-- lookup parent from repository -->
-	<version>0.0.1</version>
+	<version>1.0.0</version>
+
 	<packaging>pom</packaging>
+	<modules>
+		<module>tender-management-client</module>
+		<module>tender-management-server</module>
+	</modules>
 	<name>tender-management</name><!-- lookup parent from repository -->
 	<url/>
 	<licenses>
@@ -60,9 +65,8 @@
             </snapshots>
         </repository>
     </repositories>
-	<dependencies>
-	</dependencies>
-	<dependencyManagement>
+
+		<dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -73,8 +77,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-	<modules>
-		<module>tender-management-client</module>
-		<module>tender-management-server</module>
-	</modules>
 </project>
